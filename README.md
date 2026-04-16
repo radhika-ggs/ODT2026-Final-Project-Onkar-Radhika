@@ -59,13 +59,13 @@ By the final review, this README should clearly show:
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
 | `Onkar` | `Fabrication ` | `Mechanics` | `[Write here]` |
-| `Radhika` | `Coding` | `App` | `[Write here]` |
+| `Radhika` | `Coding` | `Art` | `micropython and python affinity, game logic affinity, artistiv ability` |
 
 ## 1.3 Project Title
-`Stomp A Mole`
+`Whack A Mole`
 
 ## 1.4 One-Line Pitch
-` A Whack-A-Mole operated by touch mat, where players whack the moles on screen with their feet `
+` A Whack-A-Mole operated by touch mat, where players whack the moles on screen with a hammer `
 
 ## 1.5 Expanded Project Idea
 In 1–2 paragraphs, explain:
@@ -75,7 +75,14 @@ In 1–2 paragraphs, explain:
 - what technologies are involved.
 
 **Response:**  
-`[Write here]`
+`Whack-A-Mole is a tabletop game where players use a touch-sensitive mat to 
+go through 5 rounds of the game and try to get the highest score.
+It has playful visuals, setup and timer that create a playable atmostphere. 
+The project is inherently fun and engaging due to its gameified nature. It is 
+also very competitive and delightful due to its whimsical setup (the hammer), 
+and leaderboard where players can track their positions.
+The main technology is touch sensors and a bluetooth keyboard, where a touch on 
+the mat corresponds to different mole positions.`
 
 ---
 
@@ -101,7 +108,9 @@ Answer the following:
 - Why would someone want to try it again?
 
 **Response:**  
-`[Write here]`
+`Its a game and playful machine all wrapped into one- the player should ideally feel delighted and a little
+competitive and stressed to maintain stake in the game.Its a game that can benifit from test-retest where participants
+would do better the second time, so we expect people to want to play it again.`
 
 ## 2.3 Design Persona
 Complete the sentence below:
@@ -109,7 +118,7 @@ Complete the sentence below:
 > We are designing this project as if we are a small creative studio making a **[toy / game / playable object / interactive experience]** for **[children / teens / adults / classmates / exhibition visitors / mixed audience]**.
 
 **Response:**  
-`[Write here]`
+`We are designing this project as if we are a small creative studio making a game for classmates and exhibition visitors`
 
 ---
 
