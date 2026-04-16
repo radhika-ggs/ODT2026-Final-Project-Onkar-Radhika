@@ -129,15 +129,15 @@ List what inspired the project.
 
 | Source Type | Title / Link | What Inspired You |
 |---|---|---|
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
-| `[Toy / Board game / App / Video / Website / Object]` | `[Link or title]` | `[What did you learn or borrow?]` |
+| `Whack A Mole` | `Arcade Game` | `We borrowed the concept of the game from here` |
+| `Website` | `culinaryschools.org/kids-games/whack-a-mole` | `Referenced a digital HTML5 version of Whack-a-Mole to understand how the game translates to a screen` |
+| `Video Game` | `Digital Whack-A-Mole games (various)` | `Inspired how a physical arcade game can be recreated digitally using clicks instead of a mallet` |
 
 ## 3.2 Original Twist
 What makes your project original?
 
 **Response:**  
-`[Write here]`
+`Unlike traditional digital Whack-a-Mole games that use a mouse or keyboard, our version is controlled using a custom touch-sensitive mat powered by an ESP32 microcontroller. This brings the game closer to the physical arcade experience — players tap the mat just like hitting a real mole, making it more interactive and hands-on. The combination of Python software and custom ESP32 hardware makes this a unique build that goes beyond a typical screen-based game.`
 
 ---
 
@@ -192,24 +192,26 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `[Condition 1]`
-- [ ] `[Condition 2]`
-- [ ] `[Condition 3]`
-- [ ] `[Condition 4]`
-- [ ] `[Condition 5]`
+- [ ] `The touch-sensitive mat connects to the computer via ESP32 and is recognized by the Python program`
+- [ ] ` Moles pop up randomly on the screen at set intervals`
+- [ ] `The player can whack a mole by tapping the corresponding zone on the mat`
+- [ ] `The game tracks and displays the player's score in real time`
+- [ ] `The game has a timer and ends after the time runs out, showing the final score`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
 
 **Response:**  
-`[Write here]`
+`A working game where moles appear randomly on screen, 
+the player can tap the ESP32 mat to whack them, and the 
+score is displayed.`
 
 ## 5.3 Stretch Features
 What features are nice to have but not essential?
 
-- `[Stretch feature 1]`
-- `[Stretch feature 2]`
-- `[Stretch feature 3]`
+- `combo availibility`
+- `Sound effects when a mole is whacked or missed`
+- `High score leaderboard that saves the top scores locally`
 
 ---
 
@@ -380,8 +382,8 @@ Insert a hand-drawn or software-made circuit diagram.
 
 | Tool / Platform | Purpose |
 |---|---|
-| `[MicroPython / Arduino / MIT App Inventor / CAD tool / other]` | `[Purpose]` |
-| `[Tool]` | `[Purpose]` |
+| `MicroPython ` | `Connecting the digital interface to the physical build, computing touch sensitivity` |
+| `Python` | `Running of the game` |
 
 ## 10.2 Software Logic
 Describe what the code must do.
@@ -426,7 +428,7 @@ Suggested sequence:
 
 ## 11.1 Is an app part of this project?
 - [ ] Yes
-- [ ] No
+- [*] No
 
 If yes, complete this section.
 
