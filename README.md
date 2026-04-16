@@ -428,7 +428,7 @@ Suggested sequence:
 
 ## 11.1 Is an app part of this project?
 - [ ] Yes
-- [*] No
+- [x] No
 
 If yes, complete this section.
 
