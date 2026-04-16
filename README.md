@@ -58,7 +58,7 @@ By the final review, this README should clearly show:
 
 | Name | Primary Role | Secondary Role | Strengths Brought to the Project |
 |---|---|---|---|
-| `Onkar` | `Fabrication ` | `Mechanics` | `[Write here]` |
+| `Onkar` | `Fabrication ` | `Mechanics` | `Good with in hand mechanisms and workings of the sensors, also experienced in circuits and logic gates. With a decent knowledge of python coding and simple logics` |
 | `Radhika` | `Coding` | `Art` | `micropython and python affinity, game logic affinity, artistiv ability` |
 
 ## 1.3 Project Title
