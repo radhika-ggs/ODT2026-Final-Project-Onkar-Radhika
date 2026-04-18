@@ -189,11 +189,11 @@ If your project is a game, list the rules clearly.
 ## 5.1 Definition of “Playable”
 Your project will be considered complete only if these conditions are met.
 
-- [ ] `The touch-sensitive mat connects to the computer via ESP32 and is recognized by the Python program`
-- [ ] ` Moles pop up randomly on the screen at set intervals`
-- [ ] `The player can whack a mole by tapping the corresponding zone on the mat`
-- [ ] `The game tracks and displays the player's score in real time`
-- [ ] `The game has a timer and ends after the time runs out, showing the final score`
+- [*] `The touch-sensitive mat connects to the computer via ESP32 and is recognized by the Python program`
+- [*] ` Moles pop up randomly on the screen at set intervals`
+- [*] `The player can whack a mole by tapping the corresponding zone on the mat`
+- [*] `The game tracks and displays the player's score in real time`
+- [*] `The game has a timer and ends after the time runs out, showing the final score`
 
 ## 5.2 Minimum Viable Version
 What is the smallest version of this project that still delivers the core experience?
@@ -241,16 +241,16 @@ Include:
 - app interaction if any.
 
 **Response:**  
-`[Write here]`
+`Mole appears in the game in let's say hole-1, the players hits the pad-1 with the hammer and this input is recorded by the system, it is then triggered to the game by the keyboard number key which was connected to the touchpad through esp32. This data is matched and preocessed and successful HIT is recorded and shown on the screen. This continues with changing position of the mole.`
 
 ## 6.3 Input / Output Map
 
 | System Part | Type | What It Does |
 |---|---|---|
-| `[Button / Sensor / Switch / App Input]` | Input | `[Describe]` |
-| `[ESP32 / Controller]` | Processing | `[Describe]` |
-| `[LED / Motor / Servo / Buzzer / Display]` | Output | `[Describe]` |
-| `[Mechanical Assembly]` | Physical Action | `[Describe]` |
+| `[Touchpin sensors as input]` | Input | `all the touchpins are mapped with the keyboard keys` |
+| `[ESP32 / Controller]` | Processing | `ESP32 has connected bluetooth keyboard with touchpins, i.e. numbpad keys to touchpins. It records and processes each hit by the player` |
+| `Computer as display` | Output | `Wack a mole game interface is shown live on the screen` |
+| `6 metal sheets have been connected to 6 touchpins on the esp32` | Physical Action | `these pins are further connected to keyboard which triggers the game` |
 
 ---
 
@@ -282,10 +282,10 @@ Add a sketch with labels showing:
 
 | Dimension | Value |
 |---|---|
-| Length | `[Write here]` |
-| Width | `[Write here]` |
-| Height | `[Write here]` |
-| Estimated weight | `[Write here]` |
+| Length | `30 inches` |
+| Width | `20 inches` |
+| Height | `0.5 inches` |
+| Estimated weight | `400 gms` |
 
 ---
 
