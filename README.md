@@ -346,8 +346,7 @@ What changed after the CAD, animation, or simulation stage?
 | Component | Quantity | Purpose |
 |---|---:|---|
 | `[ESP32]` | `1` | `[Main controller]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
-| `[Component]` | `[Qty]` | `[Purpose]` |
+| `Fat wires` | `10 metres` | `To be used as extention of touchpins` |
 
 ## 9.2 Wiring Plan
 Describe the main electrical connections.
@@ -471,9 +470,9 @@ Insert a sketch or screenshot of the app interface.
 
 | Item | Quantity | In Kit? | Need to Buy? | Estimated Cost | Material / Spec | Why This Choice? |
 |---|---:|---|---|---:|---|---|
-| `[ESP32]` | `1` | `Yes` | `No` | `0` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
-| `[Item]` | `[Qty]` | `[Yes/No]` | `[Yes/No]` | `[Cost]` | `[Spec]` | `[Reason]` |
+| `[ESP32]` | `1` | `Yes` | `No` | `0` |
+| `[GI Metal Sheet]` | `[6*6 inches*2]` | `[No- procured from lab]` | `[It provides a more stable diffusion of charge throughout]` |
+| `[Foam board and Alluminium foil]` | `[Yes]` | `[400 Rupees]` | `[FOam board provides a stable base and foil was needed to cover the wooden mallet]` |
 
 ## 12.2 Material Justification
 Explain why you selected your main materials and components.
@@ -485,31 +484,31 @@ Examples:
 - Why bearing instead of a plain shaft hole?
 
 **Response:**  
-`[Write here]`
+`Metal sheets were used as there were many issues in using aluminium foil as touchpads. As it was not smooth, it was reacting very strangely with the touch sensors`
 
 ## 12.3 Items to Purchase Separately
 
 | Item | Why Needed | Purchase Link | Latest Safe Date to Procure | Status |
 |---|---|---|---|---|
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
-| `[Item]` | `[Reason]` | `[Link]` | `[Date]` | `[Pending / Ordered / Received]` |
+| `[Handmade paper]` | `[to cover the final project mat]` |
+| `[Telesheet and aluminium foil]` | `[to cover the mallet and increase the overall stability of the structure]`|
 
 ## 12.4 Budget Summary
 
 | Budget Item | Estimated Cost |
 |---|---:|
-| Electronics | `[Cost]` |
-| Mechanical parts | `[Cost]` |
-| Fabrication materials | `[Cost]` |
-| Purchased extras | `[Cost]` |
-| Contingency | `[Cost]` |
-| **Total** | `[Cost]` |
+| Electronics | `[0]` |
+| Mechanical parts | `[0]` |
+| Fabrication materials | `[500]` |
+| Purchased extras | `[0]` |
+| Contingency | `[0]` |
+| **Total** | `[500]` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
 
 **Response:**  
-`[Write here]`
+`[Cost is fairly Bearable]`
 
 ---
 
