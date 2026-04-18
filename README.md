@@ -153,37 +153,34 @@ Examples:
 - move object → sensor detects → sound/light response → player reacts
 
 **Response:**  
-`[Write here]`
+`Look at the screen, Hit the same pad as on which the mole appears, the hit is recorded as "hit" or "miss", the score gets added with each hit and the level continues to the next, the next level features mole appearence in lesser interval`
 
 ## 4.2 Intended Player / Audience
 
 | Question | Response |
 |---|---|
-| Who is this for? | `[Write here]` |
-| Age range | `[Write here]` |
-| Solo or multiplayer | `[Write here]` |
-| Expected duration of one round | `[Write here]` |
-| What should the player feel? | `[Write here]` |
-| Is explanation required before use? | `[Write here]` |
+| Who is this for? | `Any player who wants to experience traditional arcade game` |
+| Age range | `5-60` |
+| Solo or multiplayer | 'Solo` |
+| Expected duration of one round | `30 seconds` |
+| What should the player feel? | `Player should feel the adrenaline of hitting the right mole at the right time` |
+| Is explanation required before use? | `No explanation is required as the game is self explainatory` |
 
 ## 4.3 Player Journey
 Describe exactly how a player will use the project.
 
-1. **Approach:** `[How does the player first encounter it?]`
-2. **Start:** `[How do they begin?]`
-3. **First Action:** `[What do they do first?]`
-4. **Main Interaction:** `[What keeps happening during use?]`
-5. **System Response:** `[How does the project respond?]`
-6. **Win / Lose / End Condition:** `[How does one round end?]`
-7. **Reset:** `[How does the next round begin?]`
+1. **Approach:** `Player will be handed with a hammer and the screen on which the game will be displayed`
+2. **Start:** `Player will have to follow with a hit on the same hole as the mole appears`
+3. **First Action:** `They directly hit the pad same as the mole appearance`
+4. **Main Interaction:** `The mole keeps changing it's holes within fraction of a second`
+5. **System Response:** `On a successful hit, the system responds with a HIT and for the miss, it responds with a MISS, there's also a condition of bonus if the player hits a combo or hatrick`
+6. **Win / Lose / End Condition:** `Each game ends with 4 levels and the final score is calculated`
+7. **Reset:** `The score gets recordeed at the end of each game and the player feeds his/her name and it shows on the leaderboard`
 
 ## 4.4 Rules of Play
 If your project is a game, list the rules clearly.
 
-- `[Rule 1]`
-- `[Rule 2]`
-- `[Rule 3]`
-- `[Rule 4]`
+- `Just try hitting the right mole pad'
 
 ---
 
@@ -220,17 +217,17 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [ ] Electronics-based
+- [*] Electronics-based
 - [ ] Mechanical
-- [ ] Sensor-based
+- [*] Sensor-based
 - [ ] App-connected
 - [ ] Motorized
 - [ ] Sound-based
 - [ ] Light-based
-- [ ] Screen/UI-based
-- [ ] Fabricated structure
-- [ ] Game logic based
-- [ ] Installation / tabletop experience
+- [*] Screen/UI-based
+- [*] Fabricated structure
+- [*] Game logic based
+- [*] Installation / tabletop experience
 - [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
@@ -308,13 +305,13 @@ Check all that apply.
 - [ ] Wheels
 - [ ] Sliders
 - [ ] Levers
-- [ ] Not applicable
+- [*] Not applicable
 
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
 
 **Response:**  
-`[Write here]`
+`Simple mechaninsm of hitting the touchpad and recording of the value to show win/loss`
 
 ## 8.3 Motion Planning
 If something moves, explain:
@@ -325,21 +322,20 @@ If something moves, explain:
 - what could go wrong.
 
 **Response:**  
-`[Write here]`
+`[NA]`
 
 ## 8.4 Simulation / CAD / Animation Before Making
 If your project includes mechanical motion, document the digital planning before fabrication.
 
 | Tool Used | File / Link | What Was Tested |
 |---|---|---|
-| `[Fusion 360 / Tinkercad / other]` | `[Link or screenshot]` | `[What did you validate?]` |
-| `[Tool]` | `[Link or screenshot]` | `[What did you validate?]` |
+| `NA` |
 
 ## 8.5 Changes After Digital Testing
 What changed after the CAD, animation, or simulation stage?
 
 **Response:**  
-`[Write here]`
+`[NA]`
 
 ---
 
@@ -565,37 +561,37 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [ ] Idea finalized
-- [ ] Core interaction decided
-- [ ] Sketches made
-- [ ] BOM completed
-- [ ] Purchase needs identified
-- [ ] Key uncertainty identified
-- [ ] Basic feasibility tested
+- [*] Idea finalized
+- [*] Core interaction decided
+- [*] Sketches made
+- [*] BOM completed
+- [*] Purchase needs identified
+- [*] Key uncertainty identified
+- [*] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [ ] Electronics tests completed
-- [ ] CAD / structure planning completed
-- [ ] App UI started if needed
-- [ ] Mechanical concept tested
-- [ ] Main subsystems partially working
+- [*] Electronics tests completed
+- [*] CAD / structure planning completed
+- [*] App UI started if needed
+- [*] Mechanical concept tested
+- [*] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [ ] Physical body built
-- [ ] Electronics integrated
-- [ ] Code connected to hardware
-- [ ] App connected if required
-- [ ] First playable version exists
+- [*] Physical body built
+- [*] Electronics integrated
+- [*] Code connected to hardware
+- [*] App connected if required
+- [*] First playable version exists
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [ ] Technical bugs reduced
-- [ ] Playtesting completed
-- [ ] Improvements made
-- [ ] Documentation completed
-- [ ] Final build ready
+- [*] Technical bugs reduced
+- [*] Playtesting completed
+- [*] Improvements made
+- [*] Documentation completed
+- [*] Final build ready
 
 ## 14.2 Weekly Update Log
 
@@ -623,7 +619,7 @@ Expected outcomes:
 What is the single biggest uncertainty in your project at this stage?
 
 **Response:**  
-`[Write here]`
+`Will the sensitivity be callibrated correctly so that it trigeers the keyboard?`
 
 ---
 
@@ -668,7 +664,7 @@ What is the single biggest uncertainty in your project at this stage?
 
 ## 17.1 Fabrication Process
 Describe how the project was physically made.
-
+--
 Include:
 - cutting,
 - 3D printing,
@@ -703,9 +699,9 @@ Example:
 
 | Version | Date | What Changed | Why |
 |---|---|---|---|
-| `v1` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v2` | `[Date]` | `[Describe]` | `[Reason]` |
-| `v3` | `[Date]` | `[Describe]` | `[Reason]` |
+| `v1` | `[9-4-26]` | `[The basic circuitry bades on A1]` | `[All the other ideas had some flaw or restrictions]` |
+| `v2` | `[11-4-26]` | `[The test code was done along with the game interface to be tested with kepboard and touchpads]` | `[Code could not have been put for the later part.]` |
+| `v3` | `[14-4-26]` | `[The final build with the mat of metal sheets and metal mallet were created successfully for the final test run with code]` | `[Metal sheets were chosen to be used rather than foil paper as they were smoother and more sensitive to the touch]` |
 
 ---
 
@@ -715,17 +711,15 @@ Example:
 Describe the final version of your project.
 
 **Response:**  
-`[Write here]`
+`[The final version stands with a fully functioning game coded in python itself and along with that a clean and inviting wack a mole pad has been created with tactile touchpads, hidden and clean wires, and a mallet to hit the pad with. This together is working as a good old game of WACH A MOLE]`
 
 ## 18.2 What Works Well
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[The touchpads a re working perfectcly with the digital keyboard]`
+- `[Right keys are being triggered at the right time]`
+- `[The game is responding well with each hit]`
 
 ## 18.3 What Still Needs Improvement
-- `[Point 1]`
-- `[Point 2]`
-- `[Point 3]`
+- `[The breadboard along with circuit could be hidden well in a box so the final setum looks clean]`
 
 ## 18.4 What Changed From the Original Plan
 How did the project change from the initial idea?
@@ -779,24 +773,24 @@ What would you improve next?
 # 20. Final Submission Checklist
 
 Before submission, confirm that:
-- [ ] Team details are complete
-- [ ] Project description is complete
-- [ ] Inspiration sources are included
-- [ ] Player journey is written
-- [ ] Sketches are added
-- [ ] BOM is complete
-- [ ] Purchase list is complete
-- [ ] Budget summary is complete
-- [ ] Mechanical planning is documented if applicable
-- [ ] App planning is documented if applicable
-- [ ] Code flowchart is added
-- [ ] Task breakdown is complete
-- [ ] Weekly logs are updated
-- [ ] Risk register is complete
-- [ ] Testing log is updated
-- [ ] Playtesting notes are included
-- [ ] Build photos are included
-- [ ] Final reflection is written
+- [*] Team details are complete
+- [*] Project description is complete
+- [*] Inspiration sources are included
+- [*] Player journey is written
+- [*] Sketches are added
+- [*] BOM is complete
+- [*] Purchase list is complete
+- [*] Budget summary is complete
+- [*] Mechanical planning is documented if applicable
+- [*] App planning is documented if applicable
+- [*] Code flowchart is added
+- [*] Task breakdown is complete
+- [*] Weekly logs are updated
+- [*] Risk register is complete
+- [*] Testing log is updated
+- [*] Playtesting notes are included
+- [*] Build photos are included
+- [*] Final reflection is written
 
 ---
 
