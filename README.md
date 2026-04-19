@@ -881,13 +881,13 @@ What did you learn about:
 What would you improve next?
 
 **Response:**  
-`[If granted an additional week, our focus would shift from functional stability to aesthetic polish and advanced game logic.
+`If granted an additional week, our focus would shift from functional stability to aesthetic polish and advanced game logic.
 
 Dynamic Difficulty: We would implement a leveling system where the mole frequency and timeout duration scale based on the player’s score.
 
-Structural Refinement: While our fabrication was planned and simple, we would use the extra time to integrate the electronics more cleanly into the chassis, perhaps using laser-cut acrylic or 3D-printed housings for a 'product-ready' finish.
+Structural Refinement: While our fabrication was planned and simple, we would use the extra time to integrate the electronics more cleanly into the chassis, perhaps using laser-cut acrylic or 3D-printed housings for a product-ready finish.
 
-Enhanced Feedback: We would add a dedicated LED display for real-time high-score tracking and perhaps haptic feedback within the 'mallet' or hitting surface to deepen the immersion]`
+Enhanced Feedback: We would add a dedicated LED display for real-time high-score tracking and perhaps haptic feedback within the 'mallet' or hitting surface to deepen the immersion`
 
 ---
 
