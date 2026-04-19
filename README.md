@@ -217,17 +217,17 @@ What features are nice to have but not essential?
 ## 6.1 Project Type
 Check all that apply.
 
-- [*] Electronics-based
+- [x] Electronics-based
 - [ ] Mechanical
-- [*] Sensor-based
+- [x] Sensor-based
 - [ ] App-connected
 - [ ] Motorized
 - [ ] Sound-based
 - [ ] Light-based
-- [*] Screen/UI-based
-- [*] Fabricated structure
-- [*] Game logic based
-- [*] Installation / tabletop experience
+- [x] Screen/UI-based
+- [x] Fabricated structure
+- [x] Game logic based
+- [x] Installation / tabletop experience
 - [ ] Other: `[Write here]`
 
 ## 6.2 High-Level System Description
@@ -305,7 +305,7 @@ Check all that apply.
 - [ ] Wheels
 - [ ] Sliders
 - [ ] Levers
-- [*] Not applicable
+- [x] Not applicable
 
 ## 8.2 Mechanical Description
 Describe the mechanism and what it is meant to do.
@@ -393,7 +393,22 @@ Include:
 - reset behavior.
 
 **Response:**  
-`[Write here]`
+`There are 3 Main Codes - The micropython code that uses the bluetooth keyboard and touchpads, the game code that runs the display and scorekeeping, and the calibration code that can be run to check touch thresholds. 
+Startup Behavior:
+On startup, the system initializes the hardware components including the display, touchpads, and bluetooth module. It establishes a Bluetooth connection to emulate a keyboard interface. The main game code is loaded.
+Input Handling:
+The system receives input primarily through touchpads. Each touchpad detects user interaction based on predefined thresholds. Touch inputs are translated into keyboard interaction. During gameplay, touch inputs are interpreted as player actions.
+Sensor Reading:
+Touch sensors continuously read input values from the touchpads. These readings are compared against calibrated threshold values to determine whether a valid touch has occurred. The calibration code can be used to monitor and adjust these threshold values for accuracy.
+Decision Logic:
+The system processes touch inputs and determines the appropriate response. In-game it updates the game state, checks for valid moves, and manages scoring logic. The system ensures only valid and intentional touches trigger actions.
+Output Behavior:
+The display shows the game interface, scores, and feedback to the user. Outputs  include visual updates such as score changes and round changes, and indications of hits and misses.
+Communication Logic:
+The system uses Bluetooth to communicate between micropython and game console, acting as a wireless keyboard. It sends keypress signals based on touch input. The connection is maintained and re-established if interrupted.
+Reset Behavior:
+On reset or restart, the system clears all temporary states such as local scores and input buffers. It keeps track of scores on a separate file. 
+`
 
 ## 10.3 Code Flowchart
 Insert a flowchart showing your code logic.
@@ -525,32 +540,32 @@ Include:
 - how documentation will be maintained.
 
 **Response:**  
-`[Write here]`
+`Working to our strengths, we will divide tasks based on our strongest affinity. Descisions will be made bilaterally though discussion and any changes or new ideas will be entertained and discussed. Progress will be checked through collectively decided deadlines and milestones. If a task is delayed, the responsible party will provide valid reason and a new proposed deadlinewill be set collectively. Dicumentation will be maintained through notes and video.`
 
 ## 13.2 Task Breakdown
 
-| Task ID | Task | Owner | Estimated Hours | Deadline | Dependency | Status |
+| Task ID | Task | Owner | Estimated Hours | Deadline(DD/MM/YY) | Dependency | Status |
 |---|---|---|---:|---|---|---|
-| T1 | `[Finalize concept]` | `[Name]` | `2` | `[Date]` | `None` | `To Do` |
-| T2 | `[Complete BOM]` | `[Name]` | `1` | `[Date]` | `T1` | `To Do` |
-| T3 | `[Test electronics]` | `[Name]` | `2` | `[Date]` | `T1` | `To Do` |
-| T4 | `[Build structure]` | `[Name]` | `4` | `[Date]` | `T1` | `To Do` |
-| T5 | `[Write control code]` | `[Name]` | `4` | `[Date]` | `T3` | `To Do` |
-| T6 | `[Integrate system]` | `[Name]` | `4` | `[Date]` | `T4, T5` | `To Do` |
-| T7 | `[Playtest]` | `[Name]` | `2` | `[Date]` | `T6` | `To Do` |
-| T8 | `[Refine and document]` | `[Name]` | `3` | `[Date]` | `T7` | `To Do` |
+| T1 | `[Finalize concept]` | `Radhika` | `2` | `07/04/26` | `None` | `DONE` |
+| T2 | `[Complete BOM]` | `Onkar` | `1` | `09/04/26` | `T1` | `DONE` |
+| T3 | `[Test electronics]` | `Onkar` | `2` | `09/04/26` | `T1` | `DONE` |
+| T4 | `[Build structure]` | `Onkar` | `6` | `10/04/26` | `T1` | `DONE` |
+| T5 | `[Write control code]` | `Radhika` | `12` | `10/04/26` | `T1, T3` | `DONE` |
+| T6 | `[Integrate system]` | `Radhika` | `4` | `15/04/26` | `T1, T4, T5` | `DONE` |
+| T7 | `[Playtest]` | `Onkar and Radhika` | `4` | `17/04/26` | `T1, T6` | `DONE` |
+| T8 | `[Refine and document]` | `Onkar and Radhika` | `8` | `19/04/26` | `T1, T7` | `DONE` |
 
 ## 13.3 Responsibility Split
 
 | Area | Main Owner | Support Owner |
 |---|---|---|
-| Concept and gameplay | `[Name]` | `[Name]` |
-| Electronics | `[Name]` | `[Name]` |
-| Coding | `[Name]` | `[Name]` |
-| App | `[Name]` | `[Name]` |
-| Mechanical build | `[Name]` | `[Name]` |
-| Testing | `[Name]` | `[Name]` |
-| Documentation | `[Name]` | `[Name]` |
+| Concept and gameplay | `Radhika and Onkar` | `N/A` |
+| Electronics | `Onkar` | `N/A` |
+| Coding | `Radhika` | `N/A` |
+| App | `N/A` | `N/A` |
+| Mechanical build | `Onkar` | `N/A` |
+| Testing | `Onkar and Radhika` | `N/A` |
+| Documentation | `Radhika and Onkar` | `N/A` |
 
 ---
 
@@ -560,46 +575,46 @@ Include:
 
 ### Week 1 — Plan and De-risk
 Expected outcomes:
-- [*] Idea finalized
-- [*] Core interaction decided
-- [*] Sketches made
-- [*] BOM completed
-- [*] Purchase needs identified
-- [*] Key uncertainty identified
-- [*] Basic feasibility tested
+- [x] Idea finalized
+- [X] Core interaction decided
+- [x] Sketches made
+- [x] BOM completed
+- [x] Purchase needs identified
+- [x] Key uncertainty identified
+- [x] Basic feasibility tested
 
 ### Week 2 — Build Subsystems
 Expected outcomes:
-- [*] Electronics tests completed
-- [*] CAD / structure planning completed
-- [*] App UI started if needed
-- [*] Mechanical concept tested
-- [*] Main subsystems partially working
+- [x] Electronics tests completed
+- [x] CAD / structure planning completed
+- [x] App UI started if needed
+- [x] Mechanical concept tested
+- [x] Main subsystems partially working
 
 ### Week 3 — Integrate
 Expected outcomes:
-- [*] Physical body built
-- [*] Electronics integrated
-- [*] Code connected to hardware
-- [*] App connected if required
-- [*] First playable version exists
+- [x] Physical body built
+- [x] Electronics integrated
+- [x] Code connected to hardware
+- [x] App connected if required
+- [x] First playable version exists
 
 ### Week 4 — Refine and Finish
 Expected outcomes:
-- [*] Technical bugs reduced
-- [*] Playtesting completed
-- [*] Improvements made
-- [*] Documentation completed
-- [*] Final build ready
+- [x] Technical bugs reduced
+- [x] Playtesting completed
+- [x] Improvements made
+- [x] Documentation completed
+- [x] Final build ready
 
 ## 14.2 Weekly Update Log
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 2 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 3 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
-| Week 4 | `[Write here]` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `Finalise Game and Concept` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 2 | `PLaytest(self) and finalise material ` | `We found a few vidsual changes to make to the game, decided to add music, and finalised on using a wooden hammer wrapped in foil after a lot of playtesting. ` | `We are on track` | `work on finalising` |
+| Week 3 | `Finalise Code  and Mat, Playtest` | `We did this right on schedule. All physical and digital components were completed on time.` | `We got insights from playtesting for refinement.` | `Work on Refinement` |
+| Week 4 | `Refine Physical Interface and Game Code` | `We ran into issues with the calibration and hammer mechanics so we spent extra time on that. ` | `Refinement still happened but on a 2-3 day offset. ` | `Ensure that all sensitivities are calibrated correctly` |
 
 ---
 
@@ -628,20 +643,19 @@ What is the single biggest uncertainty in your project at this stage?
 
 | What Needs Testing | How You Will Test It | Success Condition |
 |---|---|---|
-| `[Bluetooth connection]` | `[Method]` | `[What counts as success?]` |
-| `[Mechanism movement]` | `[Method]` | `[What counts as success?]` |
-| `[Sensor behavior]` | `[Method]` | `[What counts as success?]` |
-| `[App communication]` | `[Method]` | `[What counts as success?]` |
+| `[Bluetooth connection]` | `code` | `If the laptop successfully connects through ESP32, and the print statement states 'connected'` |
+| `[Calibration of Force]` | `physical and code` | `A wide range of force gets detected to account for a wide range of people playing the game.` |
+| `[Calibration of Sensor]` | `physical and code` | `non-touch and touch thresholds define whether there is a keypad trigger` |
 
 ## 16.2 Playtesting Plan
 
 | Question | How You Will Check |
 |---|---|
-| Do players understand what to do? | `[Method]` |
-| Is the interaction satisfying? | `[Method]` |
-| Do players want another turn? | `[Method]` |
-| Is the challenge balanced? | `[Method]` |
-| Is the response clear and immediate? | `[Method]` |
+| Do players understand what to do? | `Observe Behaviour for signs of confusion` |
+| Is the interaction satisfying? | `Ask for feedback` |
+| Do players want another turn? | `Wait for them to ask, then ask them` |
+| Is the challenge balanced? | `Test with various players` |
+| Is the response clear and immediate? | `Observe Behaviour for signs of confusion, observe interface for delay` |
 
 ## 16.3 Testing and Debugging Log
 
@@ -654,8 +668,10 @@ What is the single biggest uncertainty in your project at this stage?
 
 | Tester | What They Did | What Confused Them | What They Enjoyed | What You Will Change |
 |---|---|---|---|---|
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
-| `[Peer / friend / classmate]` | `[Observation]` | `[Observation]` | `[Observation]` | `[Action]` |
+| `Friend` | `They played 5 rounds of the game.` | `The touch sensitivity was not calibrated to the amount of force they were using so they were sometimes missing` | `They enjoyed the hitting part` | `[]` |
+| `Peer` | `Played Multiple times and got multiple highscores as they got more used to it` | `Didn’t know which touchpad controlled what action` | `Simple controls` | `Add labels or visual indicators for controls` |
+| `Classmate` | `Played multiple rounds quickly` | `Was unsure when a round started/ended` | `Watching score updates live` | `Add clearer round start/end indicators` |
+| `Peer` | `Played a full game and watched others` | `Didn’t know which touchpad controlled what action` | `Simple controls` | `Add labels or visual indicators for controls` |
 
 ---
 
@@ -688,7 +704,7 @@ Suggested images:
 - final build.
 
 Example:
-```md
+```
 
 
 
@@ -772,24 +788,24 @@ What would you improve next?
 # 20. Final Submission Checklist
 
 Before submission, confirm that:
-- [*] Team details are complete
-- [*] Project description is complete
-- [*] Inspiration sources are included
-- [*] Player journey is written
-- [*] Sketches are added
-- [*] BOM is complete
-- [*] Purchase list is complete
-- [*] Budget summary is complete
-- [*] Mechanical planning is documented if applicable
-- [*] App planning is documented if applicable
-- [*] Code flowchart is added
-- [*] Task breakdown is complete
-- [*] Weekly logs are updated
-- [*] Risk register is complete
-- [*] Testing log is updated
-- [*] Playtesting notes are included
-- [*] Build photos are included
-- [*] Final reflection is written
+- [x] Team details are complete
+- [x] Project description is complete
+- [x] Inspiration sources are included
+- [x] Player journey is written
+- [x] Sketches are added
+- [x] BOM is complete
+- [x] Purchase list is complete
+- [x] Budget summary is complete
+- [x] Mechanical planning is documented if applicable
+- [x] App planning is documented if applicable
+- [x] Code flowchart is added
+- [x] Task breakdown is complete
+- [x] Weekly logs are updated
+- [x] Risk register is complete
+- [x] Testing log is updated
+- [x] Playtesting notes are included
+- [x] Build photos are included
+- [x] Final reflection is written
 
 ---
 
