@@ -425,8 +425,8 @@ Suggested sequence:
 
 **Insert image below:**  
 `There are two main code flowcharts (excluding calibration):
-LINK-1 - MICROPYTHON FLOWCHART - 
-LINK-2 - GAME FLOWCHART - 
+LINK-1 - MICROPYTHON FLOWCHART - https://canva.link/57eb4on5s6tugwz
+LINK-2 - GAME FLOWCHART - https://canva.link/ozaabdakyfat8a4
 `
 
 ## 10.4 Pseudocode
