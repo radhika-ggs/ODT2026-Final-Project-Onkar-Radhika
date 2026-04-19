@@ -424,12 +424,108 @@ Suggested sequence:
 - error handling.
 
 **Insert image below:**  
-`[Upload image and link here]`
+`There are two main code flowcharts (excluding calibration):
+LINK-1 - MICROPYTHON FLOWCHART - 
+LINK-2 - GAME FLOWCHART - 
+`
 
 ## 10.4 Pseudocode
 
 ```text
-[Write your pseudocode here]
+there will be two mai  pseudocodes:
+1. GAME CODE------------------------------
+start
+IMPORT LIBABRIES
+INITIALIZE game (screen, audio, assets)
+REPEAT
+    DISPLAY Start Screen
+    WAIT until ENTER pressed
+
+    score == 0
+
+    FOR each round FROM 1 to 4 DO
+        DISPLAY Round Info
+
+        SET timer == round duration
+        INITIALIZE moles, combo ← 0
+
+        WHILE timer > 0 DO
+            READ user input
+
+            IF key (1–6) pressed THEN
+                IF mole present at position THEN
+                    REMOVE mole
+                    ADD RED MOLE
+                    INCREMENT score
+                    INCREMENT combo
+                ELSE
+                    RESET combo
+                ENDIF
+            ENDIF
+
+            SPAWN new moles (if limit not reached)
+            REMOVE expired moles
+
+            UPDATE display (score, time, moles)
+
+            DECREASE timer
+        END WHILE
+    END FOR
+
+    INPUT player name
+    STORE (name, score) in leaderboard
+    SORT leaderboard (highest score first)
+
+    DISPLAY leaderboard
+
+UNTIL user presses ESC
+
+END
+2. MICROPYTHON  CODE------------------------------
+
+START
+
+INITIALIZE 6 touch sensors
+SET threshold values for each pad
+SET key codes for each pad
+
+INITIALIZE BLE keyboard AND libraries
+
+DISPLAY "Waiting for connection"
+
+WHILE keyboard not connected DO
+    WAIT
+END WHILE
+
+DISPLAY "Connected"
+
+INITIALIZE last_trigger[6] == 0
+SET cooldown time == 200 ms
+
+FUNCTION ReadFiltered(sensor):
+    total == 0
+    REPEAT 3 times:
+        total ← total + sensor value
+    RETURN average value
+END FUNCTION
+
+LOOP forever:
+    current_time == current milliseconds
+
+    FOR each pad i from 1 to 6 DO
+        value ← ReadFiltered(pad[i])
+
+        IF value < threshold[i] THEN
+            IF (current_time - last_trigger[i]) > cooldown THEN
+                SEND key[i] via BLE
+                last_trigger[i] ← current_time
+            ENDIF
+        ENDIF
+    END FOR
+
+END LOOP
+
+END
 ```
 
 ---
