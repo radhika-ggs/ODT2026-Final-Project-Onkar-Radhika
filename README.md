@@ -610,10 +610,10 @@ Examples:
 |---|---:|
 | Electronics | `[0]` |
 | Mechanical parts | `[0]` |
-| Fabrication materials | `[500]` |
+| Fabrication materials | `[700]` |
 | Purchased extras | `[0]` |
 | Contingency | `[0]` |
-| **Total** | `[500]` |
+| **Total** | `[700]` |
 
 ## 12.5 Budget Reflection
 If your cost is too high, what can be simplified, removed, substituted, or shared?
@@ -720,10 +720,9 @@ Expected outcomes:
 
 | Risk | Type | Likelihood | Impact | Mitigation Plan | Owner |
 |---|---|---|---|---|---|
-| `[Example: Bluetooth disconnects]` | `Technical` | `Medium` | `High` | `[Fallback interaction / simplify connection flow]` | `[Name]` |
-| `[Example: Structure breaks during play]` | `Mechanical` | `Medium` | `High` | `[Reinforce joints / change material]` | `[Name]` |
-| `[Risk]` | `[Technical / Material / Time / Gameplay]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
-| `[Risk]` | `[Type]` | `[Low/Medium/High]` | `[Low/Medium/High]` | `[Plan]` | `[Name]` |
+| `[Bluetooth disconnects]` | `Technical` | `Medium` | `High` | `[Fallback interaction / simplify connection flow]` | `[Radhika]` |
+| `[Structure breaks during play]` | `Mechanical` | `Medium` | `High` | `[Reinforce joints / change material]` | `[Onkar]` |
+| `[Touchpad Stop Working]` | `[Technical / Material ]` | `[Medium]` | `[High]` | `[Check Callibration an connection]` | `[Radhika and Onkar]` |
 
 ## 15.2 Biggest Unknown Right Now
 What is the single biggest uncertainty in your project at this stage?
@@ -790,7 +789,7 @@ Include:
 - revisions.
 
 **Response:**  
-`[Write here]`
+`[First the GI Sheets were taken and cut in the workshop. At the same time Wooden mallet was hand crafted. The sheets were then connected to fat wire through double sided tape. The sheets were then fitted into the mount board pieces. These plates were then fixed together ina foldable manner through telesheet. This whole system was then covered with designer handmade paper to make it beautiful.]`
 
 ## 17.2 Build Photos
 Add photos throughout the project.
@@ -840,7 +839,7 @@ Describe the final version of your project.
 How did the project change from the initial idea?
 
 **Response:**  
-`[Write here]`
+`[The original plan was to create a kick a mole mage using capacity sensor which Rupin sir offered.We thought of it but then though it might get messy while playing. We then thought of touch sensors and using them with the virtual game. The virtual game itself was a big change of plan, first we thought of using neopixels but then it would not have given a good arcade feeling. We the shifted to pycharm to code our game and make it visually apealing. The final game stands with a good visual game and mat with touch sensitive pads alsong with a mallet to hit it.]`
 
 ---
 
@@ -852,7 +851,8 @@ What slowed you down?
 How well did you manage time, tasks, and responsibilities?
 
 **Response:**  
-`[Write here]`
+`[We were both open to learn from each other since the beginning.
+This mutual respect nd feeling of eagerness to learn was an edge over other teams in the class. There were no arguments but only moments of discussions and finding out new things wheather it was codes or circuits. Sometimes the ideations were so big that it took us a lot of time to finaize the idea itself. Once it was done all the work followed swiftly.]`
 
 ## 19.2 Technical Reflection
 What did you learn about:
@@ -863,7 +863,7 @@ What did you learn about:
 - integration?
 
 **Response:**  
-`[Write here]`
+`[We explored all the sensors before doubling down on wack a mole. The pycharm code was also new for us to learn. The callibration of touchpads itselft was also new. Fabrication was fairly simple and planned.]`
 
 ## 19.3 Design Reflection
 What did you learn about:
@@ -875,13 +875,19 @@ What did you learn about:
 - iteration?
 
 **Response:**  
-`[Write here]`
+`[Our primary takeaway was that designing for play is a balance between chaos and control. We focused on making the physical interaction as seamless as possible so the player could enter a 'flow state.' By iterating on the calibration of the touchpads, we ensured that the mechanical feedback matched the digital logic, turning a simple circuit into an engaging, delightful experience]`
 
 ## 19.4 If You Had One More Week
 What would you improve next?
 
 **Response:**  
-`[Write here]`
+`[If granted an additional week, our focus would shift from functional stability to aesthetic polish and advanced game logic.
+
+Dynamic Difficulty: We would implement a leveling system where the mole frequency and timeout duration scale based on the player’s score.
+
+Structural Refinement: While our fabrication was planned and simple, we would use the extra time to integrate the electronics more cleanly into the chassis, perhaps using laser-cut acrylic or 3D-printed housings for a 'product-ready' finish.
+
+Enhanced Feedback: We would add a dedicated LED display for real-time high-score tracking and perhaps haptic feedback within the 'mallet' or hitting surface to deepen the immersion]`
 
 ---
 
