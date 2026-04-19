@@ -611,7 +611,7 @@ Expected outcomes:
 
 | Week | Planned Goal | What Actually Happened | What Changed | Next Steps |
 |---|---|---|---|---|
-| Week 1 | `Finalise Game and Concept` | `[Write here]` | `[Write here]` | `[Write here]` |
+| Week 1 | `Finalise Game and Concept` | `We brainstormed multiple ideas as went with the most appropriate one` | `We had been planning for certain ideas that didn't work out so we had to review the mehcanical and code requirements` | `finalise material` |
 | Week 2 | `PLaytest(self) and finalise material ` | `We found a few vidsual changes to make to the game, decided to add music, and finalised on using a wooden hammer wrapped in foil after a lot of playtesting. ` | `We are on track` | `work on finalising` |
 | Week 3 | `Finalise Code  and Mat, Playtest` | `We did this right on schedule. All physical and digital components were completed on time.` | `We got insights from playtesting for refinement.` | `Work on Refinement` |
 | Week 4 | `Refine Physical Interface and Game Code` | `We ran into issues with the calibration and hammer mechanics so we spent extra time on that. ` | `Refinement still happened but on a 2-3 day offset. ` | `Ensure that all sensitivities are calibrated correctly` |
@@ -661,8 +661,12 @@ What is the single biggest uncertainty in your project at this stage?
 
 | Date | Problem Found | Type | What You Tried | Result | Next Action |
 |---|---|---|---|---|---|
-| `[Date]` | `[Describe issue]` | `[Technical / Mechanical / UI / Gameplay]` | `[What you did]` | `[Worked / Partly / Failed]` | `[Next step]` |
-| `[Date]` | `[Describe issue]` | `[Type]` | `[What you did]` | `[Result]` | `[Next step]` |
+| `[09/04/26]` | `[We realised that there were only 7 working touchpins. We had planned for 9.]` | `Technical` | `We changed the number of touchpins and recalibrated material` | `Worked` | `Finalise Game` |
+| `[11/04/26]` | `There wasn't enough competitiveness` | `Gameplay` | `Added scoreboard and rating from S-C` | `Worked` | `Finalise mehcnics and code` |
+| `[13/04/26]` | `The hammer was not showing touch as well as it should` | `Mechanical` | `We made the foil composition to just one type` | `Worked` | `Playtest` |
+| `[14/04/26]` | `The visuals were hard to see for some players` | `[UI]` | `Increase size of window, create new custom pixel art sprites for contrast` | `Worked` | `Finalise` |
+| `[16/04/26]` | `5 rounds were very time consuming and led to fatigue` | `Gameplay` | `We reduced rounds to 4 and reduced duration. We also added music` | `Worked` | `` |
+| `[18/04/26]` | `The touch sensitivity became jittery` | `Technical, Mechanical` | `Changed thresholds again, uncrossed wires and increased threshold values again` | `Worked` | `` |
 
 ## 16.4 Playtesting Notes
 
